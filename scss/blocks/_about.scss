@@ -1,0 +1,151 @@
+.about{
+    margin-bottom: 90px;
+    background-color:rgba(27, 38, 47, 1) ;
+    width: 90%;
+    height: 506px;
+    display: flex;
+    flex-wrap: wrap;
+    &__box{
+        margin: 5% 0% 5% 0%;
+        align-items: center;
+        background-color:rgba(27, 38, 47, 1) ;
+        width: 40%;
+        height: 80%;
+        // border: 1px solid black;
+        display: block;
+        &__titel{
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            width: 70%;
+            margin: 15% 20% 5% 20% ;
+            color: rgba(251, 252, 254, 1);
+
+        }
+        &__text{
+            font-family: 'Public Sans'; 
+            font-weight: 400;
+            width: 90%;
+            margin: 5% 5% 5% 5% ;
+            color: rgba(251, 252, 254, 1);
+        }
+        &__btn{
+            display: block;
+            width: 129px;
+            height: 48px;
+            background-color:rgba(251, 252, 254, 1) ;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            margin-left: 5%;
+            padding: 10px 0px 10px 30px;
+            text-decoration: none;
+        }
+
+    }
+    &__card{
+        background-color:rgba(27, 38, 47, 1) ;
+        // border: 1px solid black;
+        width: 50%;
+        height: 110px;
+        margin: 20% 5% 0% 5%;
+        display: flex;
+        flex-wrap: wrap;
+        &__image{
+            margin: 1.5%;
+            display: block;
+          
+            width: 30%;
+            height: 30%;
+            
+            &__img{
+            
+              
+              
+            }
+           
+
+        }
+
+    }
+}
+@media screen and (max-width: 769px){
+    .about{
+        margin-bottom: 90px;
+        background-color:rgba(27, 38, 47, 1) ;
+        width: 90%;
+        height: 800px;
+        display: block;
+        flex-wrap: wrap;
+        &__box{
+            // position: absolute;
+            margin: 40% 10% 5% 0%;
+            align-items: center;
+            background-color:rgba(27, 38, 47, 1) ;
+            width: 100%;
+            height: 50%;
+            // border: 1px solid black;
+            display: block;
+            &__titel{
+                // position: absolute;
+                font-family: 'DM Serif Display';
+                font-style: normal;
+                font-weight: 400;
+                width: 70%;
+                
+                margin: 5% 20% 5% 5% ;
+                color: rgba(251, 252, 254, 1);
+    
+            }
+            &__text{
+                // position: absolute;
+                font-family: 'Public Sans'; 
+                font-weight: 400;
+                width: 90%;
+                margin: 5% 5% 5% 5% ;
+                color: rgba(251, 252, 254, 1);
+            }
+            &__btn{
+                // position: absolute;
+                display: block;
+                width: 129px;
+                height: 48px;
+                background-color:rgba(251, 252, 254, 1) ;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                margin-left: 5%;
+                padding: 10px 0px 10px 30px;
+                text-decoration: none;
+            }
+    
+        }
+        &__card{
+           
+            background-color:rgba(27, 38, 47, 1) ;
+            // border: 1px solid black;
+            width: 100%;
+            height: 110px;
+            margin: 0% 5% 0% 5%;
+            display: flex;
+            flex-wrap: wrap;
+            &__image{
+                margin: 1.5%;
+                display: block;
+              
+                width: 30%;
+                height: 30%;
+                
+                &__img{
+                
+                  
+                  
+                }
+               
+    
+            }
+    
+        }
+    }
+    
+}

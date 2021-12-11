@@ -1,0 +1,38 @@
+.footer{
+    width: 90%;
+    background-color:rgba(27, 38, 47, 1) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+    &__nav{
+        margin-left: -40%;
+        display: flex;
+        list-style: none;
+        &__link{
+            margin-left: 19%;
+            
+            a{
+                text-decoration: none;
+                color:rgba(251, 252, 254, 1);
+            }
+        }
+
+    }
+    &__image{
+        margin-right: 10%;
+        display: flex;
+       
+        &__img{
+            margin-right: 20%;
+            &:hover{
+                background: rgb(241, 15, 15);
+            }
+         
+          
+        }
+    }
+}

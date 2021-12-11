@@ -1,0 +1,303 @@
+
+.header{
+    width: 90%;
+    // border: 1px solid rgb(128, 128, 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 120px;
+    // &::after{
+    //     z-index: -1;
+    //     position: absolute;
+    //     width:630px;
+    //     height: 780px;
+    //     display: block;
+    //     content: "";
+    //     background: url("/img/bac\ img.png");
+    //     background-repeat: no-repeat;
+    //     right: -10%;
+    //     border-radius: 50% 0% 45% 50%;
+    //     background-position-x: 0;
+
+    // }
+    &__logo{
+     
+       display:flex;
+       align-items: center;
+      
+    }
+    &__toggle{
+        display: none;
+    }
+    &__nav{
+      margin-left: -37%;
+    }
+    .navbar{
+        display: flex;
+        list-style: none;
+       &__item{
+           display: flex;
+           margin: 10%;  
+        &__link{
+            font-family: 'Public Sans';
+            font-weight: 700;
+            color: 
+            rgba(54, 83, 107, 1);
+            text-decoration: none;
+            &:hover{
+                color: black;
+            }
+        
+        }
+       }
+
+    }
+    &__btn{
+        display:flex;
+        min-width:173px;
+        height: 48px;
+       
+        text-decoration: none;
+        border: 1px solid rgb(97, 65, 77) ;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-color: rgb(180, 42, 90);
+        h4{
+            width: 80%;
+            margin: 10px 0px 10px 25px;
+            color: white;
+        }
+        &:hover {
+           background-color:rgb(117, 24, 24) ;
+        }
+    }
+    &__btn2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .header{
+        width: 95%;
+       
+        // border: 1px solid rgb(128, 128, 27);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 120px;
+        // &::after{
+        //     z-index: -1;
+        //     position: absolute;
+        //     width:769px;
+        //     height: 800px;
+        //     display: flex;
+        //     content: "";
+        //     background: url("/img/bac2.png");
+        //     background-repeat: no-repeat;
+        //     right: 5%;
+        //     left: 0%;
+        //     top: 0px;
+        //     border-radius: 0% 0% 50% 50%;
+        //     // background-position-x: 0;
+    
+        // }
+        &__logo{
+           width: 100px;
+           display:flex;
+           align-items: center;
+          
+        }
+        &__toggle{
+            display: none;
+        }
+        &__nav{
+          margin-left:-30%;
+        }
+        .navbar{
+            display: flex;
+            list-style: none;
+           &__item{
+               display: flex;
+               margin:5% 2% 5% 5%;  
+            &__link{
+                font-family: 'Public Sans';
+                font-weight: 700;
+                color: 
+                rgba(54, 83, 107, 1);
+                text-decoration: none;
+                &:hover{
+                    color: black;
+                }
+            
+            }
+           }
+    
+        }
+        &__btn{
+            display:flex;
+            min-width:173px;
+            height: 48px;
+            margin-left: -10%;
+            text-decoration: none;
+            border: 1px solid rgb(97, 65, 77) ;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            background-color: rgb(180, 42, 90);
+            h4{
+                width: 80%;
+                margin: 10px 0px 10px 25px;
+                color: white;
+            }
+            &:hover {
+               background-color:rgb(117, 24, 24) ;
+            }
+        }
+        &__btn2{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 481px) {
+    .header{
+        width: 99%;
+        
+        // border: 1px solid rgb(128, 128, 27);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 120px;
+        &::after{
+            z-index: -1;
+            position: absolute;
+            width:769px;
+            height: 800px;
+            display:none;
+            content: "";
+            background: url("/img/bac2.png");
+            background-repeat: no-repeat;
+            right: 5%;
+            left: 0%;
+            top: 0px;
+            border-radius: 0% 0% 50% 50%;
+            // background-position-x: 0;
+    
+        }
+       
+        &__logo{
+           
+           display:flex;
+           align-items: center;
+          
+        }
+        &__toggle{
+            display: flex;
+            position: relative;
+            // border: 1px solid rgb(136, 44, 44);
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 40px;
+            height: 35px;
+            margin: 5% 10% 5% 0%;
+            &:hover ~ .header__nav{
+                transform: translatex(-35%);
+                transition: all 1s ;
+            }
+           
+            &::after,&::before{
+             display: block;
+             left: 0;
+              content: "";
+            }
+            &::after, &::before, &>span{
+                width: 100%;
+                height:5px ;
+                border-radius: 3px;
+                background-color:rgb(94, 89, 139);
+
+            }
+
+        }
+
+        &__nav{
+            transform:translatex(-130%);
+        }
+        .navbar{
+           background-color: rgba(27, 38, 47, 1);
+            width: 300px;
+            height: 600px;
+            border: 1px solid black;
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: block;
+            list-style: none;
+            top: 60px;
+           right: 0;;
+           &__item{
+               align-items: center;
+               justify-content: center;
+               display: flex;
+               margin:10% 0% 0% 0%;  
+            &__link{
+                font-family: 'Public Sans';
+                font-weight: 700;
+                color: 
+                rgba(54, 83, 107, 1);
+                text-decoration: none;
+                &:hover{
+                    color: black;
+                }
+            
+            }
+           
+           }
+    
+        }
+        &__btn2{
+            display:flex;
+            min-width:173px;
+            height: 48px;
+            margin-top: 50px;
+            margin-right: 30px;
+            text-decoration: none;
+            border: 1px solid rgb(97, 65, 77) ;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            background-color: rgb(180, 42, 90);
+            h4{
+                width: 80%;
+                margin: 10px 0px 10px 25px;
+                color: white;
+            }
+            &:hover {
+               background-color:rgb(117, 24, 24) ;
+            }
+        }
+        &__btn{
+            display:none;
+            min-width:173px;
+            height: 48px;
+          
+            text-decoration: none;
+            border: 1px solid rgb(97, 65, 77) ;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            background-color: rgb(180, 42, 90);
+            h4{
+                width: 80%;
+                margin: 10px 0px 10px 25px;
+                color: white;
+            }
+            &:hover {
+               background-color:rgb(117, 24, 24) ;
+            }
+        }
+    }
+}

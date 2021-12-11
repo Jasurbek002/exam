@@ -1,5 +1,31 @@
 .container{
-    max-width: 1160px!important;
+    .visually-hidden {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+      }
+    max-width: 1500px!important;
     padding: 0 30px!important;
     margin: 0 auto!important;
+   overflow: hidden;
+}
+@media screen and (max-width: 769px){
+    .container{
+        max-width: 769px!important;
+        padding: 0px!important;
+        margin: 0 auto!important;
+       overflow: hidden;
+    }
+}
+@media screen and (max-width: 481px){
+    .container{
+        max-width: 481px!important;
+        padding: 0px!important;
+        margin: 0 auto!important;
+       overflow: hidden;
+    }
 }
